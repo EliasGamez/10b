@@ -140,7 +140,7 @@ $insertar = $mysqli->query("INSERT INTO ansiedad (ansiedad.Id_ansiedad, ansiedad
                                         $p9,$p10,$p11,$p12,$p13,$p14,$p15,$p16,$p17,$p18,
                                         $p19,$p20,$p21,$p22,$p23,$p24,$p25,$p26,$p27,$p28,
                                         $p29,$p30,$p31,$p32,$p33,$p34,$p35,$p36,$p37,$p38,
-                                        $p39,$p40,$ab,$aabb,'$estado','$rasg',NULL,'$date')");
+                                        $p39,$p40,$ab,$aabb,'$estado','$rasg','Hola','$date')");
 
 $update = $mysqli->query("UPDATE usuarios SET Cuestionario_1 = 1 WHERE Id_usuario = '$id'");
 
