@@ -80,10 +80,11 @@ if($total6 > 23){
     $total6 = "Baja";
 }
 
-$insertar = $mysqli->query("INSERT INTO motivacion_aprendizaje VALUES('','$id','$p1','$p2','$p3','$p4','$p5','$p6','$p7','$p8','$p9',
-                                                        '$p10','$p11','$p12','$p13','$p14','$p15','$p16','$p17',
-                                                        '$p18','$p19','$p20','$p21','$p22','$p23','$total','$total2',
-                                                        '$total3','$total4','$total5','$total6','$date','')");
+$insertar = $mysqli->query("INSERT INTO motivacion_aprendizaje (motivacion_aprendizaje.Id_motivacion_aprendizaje, 
+                                        motivacion_aprendizaje.Id_usuario, motivacion_aprendizaje.Pregunta_1, motivacion_aprendizaje.Pregunta_2, motivacion_aprendizaje.Pregunta_3, motivacion_aprendizaje.Pregunta_4, motivacion_aprendizaje.Pregunta_5, motivacion_aprendizaje.Pregunta_6, motivacion_aprendizaje.Pregunta_7, motivacion_aprendizaje.Pregunta_8, motivacion_aprendizaje.Pregunta_9, motivacion_aprendizaje.Pregunta_10, motivacion_aprendizaje.Pregunta_11, motivacion_aprendizaje.Pregunta_12, motivacion_aprendizaje.Pregunta_13, motivacion_aprendizaje.Pregunta_14, motivacion_aprendizaje.Pregunta_15, motivacion_aprendizaje.Pregunta_16, motivacion_aprendizaje.Pregunta_17, motivacion_aprendizaje.Pregunta_18, motivacion_aprendizaje.Pregunta_19, motivacion_aprendizaje.Pregunta_20, motivacion_aprendizaje.Pregunta_21, motivacion_aprendizaje.Pregunta_22, motivacion_aprendizaje.Pregunta_23, motivacion_aprendizaje.Motivacion_profunda, motivacion_aprendizaje.Motivacion_rendimiento, motivacion_aprendizaje.Motivacion_superficial, motivacion_aprendizaje.Cantidad_profunda, motivacion_aprendizaje.Cantidad_ren, motivacion_aprendizaje.Cantidad_super, motivacion_aprendizaje.Fecha, motivacion_aprendizaje.Nombre) 
+                                        VALUES(NULL,$id,$p1,$p2,$p3,$p4,$p5,$p6,$p7,$p8,$p9,$p10,$p11,$p12,$p13,
+                                        $p14,$p15,$p16,$p17,$p18,$p19,$p20,$p21,$p22,$p23,$total,$total2,$total3,
+                                        '$total4','$total5','$total6','$date','Hola')");
 
 $update = $mysqli->query("UPDATE usuarios SET Cuestionario_3 = 1 WHERE Id_usuario = '$id'");
 
