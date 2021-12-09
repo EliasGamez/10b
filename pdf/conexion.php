@@ -1,6 +1,6 @@
 <?php
 	
-	$mysqli = new mysqli('localhost', 'root', '', 'cuestionarios');
+	$mysqli = new mysqli('localhost', 'root', 'password', 'cuestionarios');
 	
 	if($mysqli->connect_error){
 		

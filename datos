@@ -5,6 +5,10 @@ ALFM7628
 TI2018S048
 MIGF8009
 
+git add --all
+git commit -m "first commit"
+git push
+
 
 $SQLstr = "SELECT * FROMcommentaires WHERE affiche=1";
 $r = mysql_query($SQLstr);
