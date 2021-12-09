@@ -120,18 +120,18 @@ $rasgo = $aabb;
 //                                                         '$aabb','$estado','$rasgo','','$date')")
 
 
-$insertar = $mysqli->query("INSERT INTO `ansiedad`(`Id_ansiedad`, `Id_usuario`, `Pregunta_1`, `Pregunta_2`, 
-                                        `Pregunta_3`, `Pregunta_4`, `Pregunta_5`, `Pregunta_6`, `Pregunta_7`, 
-                                        `Pregunta_8`, `Pregunta_9`, `Pregunta_10`, `Pregunta_11`, `Pregunta_12`, 
-                                        `Pregunta_13`, `Pregunta_14`, `Pregunta_15`, `Pregunta_16`, 
-                                        `Pregunta_17`, `Pregunta_18`, `Pregunta_19`, `Pregunta_20`, 
-                                        `Pregunta_21`, `Pregunta_22`, `Pregunta_23`, `Pregunta_24`, 
-                                        `Pregunta_25`, `Pregunta_26`, `Pregunta_27`, `Pregunta_28`, 
-                                        `Pregunta_29`, `Pregunta_30`, `Pregunta_31`, `Pregunta_32`, 
-                                        `Pregunta_33`, `Pregunta_34`, `Pregunta_35`, `Pregunta_36`, 
-                                        `Pregunta_37`, `Pregunta_38`, `Pregunta_39`, `Pregunta_40`, 
-                                        `Escala_estado`, `Escala_rasgo`, `Estado`, `Rasgo`, `Nombre`, 
-                                        `Fecha`) 
+$insertar = $mysqli->query("INSERT INTO `ansiedad` A (`A.Id_ansiedad`, `A.Id_usuario`, `A.Pregunta_1`, `A.Pregunta_2`, 
+                                        `A.Pregunta_3`, `A.Pregunta_4`, `A.Pregunta_5`, `A.Pregunta_6`, `A.Pregunta_7`, 
+                                        `A.Pregunta_8`, `A.Pregunta_9`, `A.Pregunta_10`, `A.Pregunta_11`, `A.Pregunta_12`, 
+                                        `A.Pregunta_13`, `A.Pregunta_14`, `A.Pregunta_15`, `A.Pregunta_16`, 
+                                        `A.Pregunta_17`, `A.Pregunta_18`, `A.Pregunta_19`, `A.Pregunta_20`, 
+                                        `A.Pregunta_21`, `A.Pregunta_22`, `A.Pregunta_23`, `A.Pregunta_24`, 
+                                        `A.Pregunta_25`, `A.Pregunta_26`, `A.Pregunta_27`, `A.Pregunta_28`, 
+                                        `A.Pregunta_29`, `A.Pregunta_30`, `A.Pregunta_31`, `A.Pregunta_32`, 
+                                        `A.Pregunta_33`, `A.Pregunta_34`, `A.Pregunta_35`, `A.Pregunta_36`, 
+                                        `A.Pregunta_37`, `A.Pregunta_38`, `A.Pregunta_39`, `A.Pregunta_40`, 
+                                        `A.Escala_estado`, `A.Escala_rasgo`, `A.Estado`, `A.Rasgo`, `A.Nombre`, 
+                                        `A.Fecha`) 
                                         VALUES('','$id','$p1','$p2','$p3','$p4','$p5','$p6','$p7','$p8','$p9',
                                                         '$p10','$p11','$p12','$p13','$p14','$p15','$p16','$p17',
                                                         '$p18','$p19','$p20','$p21','$p22','$p23','$p24','$p25',

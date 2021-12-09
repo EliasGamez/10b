@@ -9,6 +9,11 @@ git add --all
 git commit -m "first commit"
 git push
 
+INSERT INTO aforo (aforo.id_aforo, aforo.semaforo, aforo.a_general, aforo.a_administrativo, 
+aforo.a_docentes, aforo.a_estudiantes, aforo.estado, aforo.observaciones) 
+VALUES (NULL,'$semaforo', 200, 20, 20, 20, '$status', '$observaciones')
+
+
 
 $SQLstr = "SELECT * FROMcommentaires WHERE affiche=1";
 $r = mysql_query($SQLstr);
