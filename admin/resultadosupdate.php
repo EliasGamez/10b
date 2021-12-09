@@ -11,7 +11,8 @@ session_start();
 $id_nuevo = $_POST['id_nuevo'];
 $observacion = $_POST['observacion'];
 
-$insertar = $mysqli->query("INSERT INTO Observaciones VALUES('','$id_nuevo','$observacion')");
+$insertar = $mysqli->query("INSERT INTO observaciones (observaciones.Id_observaciones, observaciones.Id_usuario, observaciones.Observacion) 
+                            VALUES (NULL,$id_nuevo,'$observacion')");
 
 if($insertar){
         echo "<script> alert('Usuario resgistrado');window.location= 'resultadosgenerales.php' </script>";
