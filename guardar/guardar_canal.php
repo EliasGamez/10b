@@ -66,13 +66,17 @@ $porcentaje_auditivo = ($auditivo * 100) / $total2;
 $kinestesico = $p4+$p6+$p7+$p8+$p14+$p18+$p21+$p25+$p30+$p31+$p34+$p35;
 $porcentaje_kinestesico = ($kinestesico * 100) / $total2;   
 
-$insertar = $mysqli->query("INSERT INTO canal_aprendizaje VALUES('','$id','$p1','$p2','$p3','$p4','$p5','$p6','$p7','$p8','$p9',
-                                                        '$p10','$p11','$p12','$p13','$p14','$p15','$p16','$p17',
-                                                        '$p18','$p19','$p20','$p21','$p22','$p23','$p24','$p25',
-                                                        '$p26','$p27','$p28','$p29','$p30','$p31','$p32','$p33',
-                                                        '$p34','$p35','$p36','$visual','$auditivo','$kinestesico',
-                                                        '$porcentaje_visual','$porcentaje_auditivo','$porcentaje_kinestesico',
-                                                        '$date','')");
+$insertar = $mysqli->query("INSERT INTO canal_aprendizaje(canal_aprendizaje.Id_canal, 
+                                        canal_aprendizaje.Id_usuario, canal_aprendizaje.Pregunta_1, 
+                                        canal_aprendizaje.Pregunta_2, canal_aprendizaje.Pregunta_3, 
+                                        canal_aprendizaje.Pregunta_4, canal_aprendizaje.Pregunta_5, 
+                                        canal_aprendizaje.Pregunta_6, canal_aprendizaje.Pregunta_7, 
+                                        canal_aprendizaje.Pregunta_8, canal_aprendizaje.Pregunta_9, 
+                                        canal_aprendizaje.Pregunta_10, canal_aprendizaje.Pregunta_11, canal_aprendizaje.Pregunta_12, canal_aprendizaje.Pregunta_13, canal_aprendizaje.Pregunta_14, canal_aprendizaje.Pregunta_15, canal_aprendizaje.Pregunta_16, canal_aprendizaje.Pregunta_17, canal_aprendizaje.Pregunta_18, canal_aprendizaje.Pregunta_19, canal_aprendizaje.Pregunta_20, canal_aprendizaje.Pregunta_21, canal_aprendizaje.Pregunta_22, canal_aprendizaje.Pregunta_23, canal_aprendizaje.Pregunta_24, canal_aprendizaje.Pregunta_25, canal_aprendizaje.Pregunta_26, canal_aprendizaje.Pregunta_27, canal_aprendizaje.Pregunta_28, canal_aprendizaje.Pregunta_29, canal_aprendizaje.Pregunta_30, canal_aprendizaje.Pregunta_31, canal_aprendizaje.Pregunta_32, canal_aprendizaje.Pregunta_33, canal_aprendizaje.Pregunta_34, canal_aprendizaje.Pregunta_35, canal_aprendizaje.Pregunta_37, canal_aprendizaje.Cal_visual, canal_aprendizaje.Cal_audi, canal_aprendizaje.Cal_kines, canal_aprendizaje.Visual, canal_aprendizaje.Audi, canal_aprendizaje.Kines, canal_aprendizaje.Fecha, canal_aprendizaje.Nombre) VALUES(NULL,$id,$p1,$p2,$p3,$p4,$p5,$p6,$p7,$p8,$p9,
+                                        $p10,$p11,$p12,$p13,$p14,$p15,$p16,$p17,$p18,$p19,$p20,$p21,$p22,
+                                        $p23,$p24,$p25,$p26,$p27,$p28,$p29,$p30,$p31,$p32,$p33,$p34,$p35,
+                                        $p36,$visual,$auditivo,$kinestesico,$porcentaje_visual,
+                                        $porcentaje_auditivo,$porcentaje_kinestesico,'$date','Hola')");
 
 $update = $mysqli->query("UPDATE usuarios SET Cuestionario_5 = 1 WHERE Id_usuario = '$id'");
 
