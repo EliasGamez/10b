@@ -49,7 +49,7 @@
                     ?>
                     
                 <label for="">Nombre</label>
-                <input class="controls" type="text" value="<?php echo $mostrar['Nombre']; ?>" readonly>
+                <input class="controls" type="text" value="<?php echo utf8_decode($mostrar['Nombre']); ?>" readonly>
                 <label for="">Apellido paterno</label>
                 <input class="controls" type="text" value="<?php echo $mostrar['Apellido_paterno']; ?>" readonly>
                 <label for="">Apellido materno</label>
