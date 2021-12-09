@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Responsive Sidebar Menu | CodingLab </title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <div class="logo_name"><img src="imagenes/logo.png" alt="Logo Utsem" class="logo"></div>
+      <div class="logo_name">PSICOLOGÍA</div>
+      <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <i class='bx bx-search'></i>
+        <input type="text" placeholder="Buscar...">
+        <span class="tooltip">Buscar</span>
+      </li>
+      <li>
+        <a href="alumno.php">
+          <i class='bx bx-clipboard'></i>
+          <span class="links_name">Cuestionarios</span>
+        </a>
+        <span class="tooltip">Cuestionarios</span>
+      </li>
+      <li>
+        <a href="alumnotabla.php">
+          <i class='bx bx-copy-alt'></i>
+          <span class="links_name">Resultados</span>
+        </a>
+        <span class="tooltip">Resultados</span>
+      </li>
+      <li>
+        <a href="datos.php">
+          <i class='bx bx-user'></i>
+          <span class="links_name">Mis datos</span>
+        </a>
+        <span class="tooltip">Mis datos</span>
+      </li>
+      <li class="profile">
+        <a href="desconexion.php">Salir
+          <i class='bx bx-log-out' id="log_out"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

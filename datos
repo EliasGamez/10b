@@ -1,0 +1,20 @@
+<?php echo utf8_encode($matricula); ?>
+
+ALFM7628
+
+TI2018S048
+MIGF8009
+
+
+$SQLstr = "SELECT * FROMcommentaires WHERE affiche=1";
+$r = mysql_query($SQLstr);
+$num =mysql_num_rows($r);
+
+
+SELECT u.Nombre, u.Apellido_paterno, u.Apellido_materno, a.Estado, a.Rasgo, d.Rango, m.Cantidad_profunda, m.Cantidad_ren, m.Cantidad_super, e.Porcentaje_activo, e.Porcentaje_reflex, e.Porcentaje_teo, e.Porcentaje_prag, c.Visual, c.Audi, c.Kines FROM ansiedad a INNER JOIN depresion d ON a.Id_usuario = d.Id_usuario INNER JOIN canal_aprendizaje c ON d.Id_usuario = c.Id_usuario INNER JOIN estilo_aprendizaje e ON c.Id_usuario = e.Id_usuario INNER JOIN motivacion_aprendizaje m ON e.Id_usuario = m.Id_usuario INNER JOIN usuarios u ON u.Id_usuario = m.Id_usuario;
+
+SELECT a.Estado, a.Rasgo, d.Rango, m.Cantidad_profunda, m.Cantidad_ren, m.Cantidad_super, 
+        e.Porcentaje_activo, e.Porcentaje_reflex, e.Porcentaje_teo, e.Porcentaje_prag, c.Visual, 
+        c.Audi, c.Kines FROM ansiedad a INNER JOIN depresion d ON a.Id_usuario = d.Id_usuario 
+        INNER JOIN canal_aprendizaje c ON d.Id_usuario = c.Id_usuario INNER JOIN estilo_aprendizaje e 
+        ON c.Id_usuario = e.Id_usuario INNER JOIN motivacion_aprendizaje m ON e.Id_usuario = m.Id_usuario;
