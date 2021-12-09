@@ -144,7 +144,7 @@ $insertar = $mysqli->query("INSERT INTO ansiedad (ansiedad.Id_ansiedad, ansiedad
 
 $update = $mysqli->query("UPDATE usuarios SET Cuestionario_1 = 1 WHERE Id_usuario = '$id'");
 
-    if($insertar){
+    if($insertar==false){
         echo "<script> alert('Registro insertado');window.location= '../alumno.php' </script>";
     } 
 // }
