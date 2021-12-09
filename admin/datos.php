@@ -49,11 +49,11 @@
                     ?>
                     
                 <label for="">Nombre</label>
-                <input class="controls" type="text" value="<?php echo $mostrar['Nombre']; ?>" readonly>
+                <input class="controls" type="text" value="<?php echo utf8_decode($mostrar['Nombre']); ?>" readonly>
                 <label for="">Apellido paterno</label>
-                <input class="controls" type="text" value="<?php echo $mostrar['Apellido_paterno']; ?>" readonly>
+                <input class="controls" type="text" value="<?php echo utf8_decode($mostrar['Apellido_paterno']); ?>" readonly>
                 <label for="">Apellido materno</label>
-                <input class="controls" type="text" value="<?php echo $mostrar['Apellido_materno']; ?>" readonly>
+                <input class="controls" type="text" value="<?php echo utf8_decode($mostrar['Apellido_materno']); ?>" readonly>
                 <label for="">Sexo</label>
                 <input class="controls" type="text" value="<?php echo $mostrar['Sexo']; ?>" readonly>
                 <label for="">Matrícula</label>
