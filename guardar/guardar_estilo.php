@@ -78,15 +78,19 @@ $porcentaje_teorico = ($teorico * 100) / $total2;
 $pragmatico = $p1+$p10+$p15+$p18+$p19+$p21+$p25+$p33+$p34+$p36+$p40;
 $porcentaje_pragmatico = ($pragmatico * 100) / $total2;
 
-$insertar = $mysqli->query("INSERT INTO estilo_aprendizaje VALUES('','$id','$p1','$p2','$p3','$p4','$p5','$p6','$p7','$p8','$p9',
-                                                        '$p10','$p11','$p12','$p13','$p14','$p15','$p16','$p17',
-                                                        '$p18','$p19','$p20','$p21','$p22','$p23','$p24','$p25',
-                                                        '$p26','$p27','$p28','$p29','$p30','$p31','$p32','$p33',
-                                                        '$p34','$p35','$p36','$p37','$p38','$p39','$p40','$p41',
-                                                        '$p42','$p43','$p44','$activo','$reflexivo','$teorico',
-                                                        '$pragmatico','$porcentaje_activo','$porcentaje_reflexisivo',
-                                                        '$porcentaje_teorico','$porcentaje_pragmatico',
-                                                        '$date','')");
+$insertar = $mysqli->query("INSERT INTO estilo_aprendizaje (estilo_aprendizaje.Id_estilo_aprendizaje, 
+                                        estilo_aprendizaje.Id_usuario, estilo_aprendizaje.Pregunta_1, 
+                                        estilo_aprendizaje.Pregunta_2, estilo_aprendizaje.Pregunta_3, 
+                                        estilo_aprendizaje.Pregunta_4, estilo_aprendizaje.Pregunta_5, 
+                                        estilo_aprendizaje.Pregunta_6, estilo_aprendizaje.Pregunta_7, estilo_aprendizaje.Pregunta_8, estilo_aprendizaje.Pregunta_9, estilo_aprendizaje.Pregunta_10, estilo_aprendizaje.Pregunta_11, estilo_aprendizaje.Pregunta_12, estilo_aprendizaje.Pregunta_13, estilo_aprendizaje.Pregunta_14, estilo_aprendizaje.Pregunta_15, estilo_aprendizaje.Pregunta_16, estilo_aprendizaje.Pregunta_17, estilo_aprendizaje.Pregunta_18, estilo_aprendizaje.Pregunta_19, estilo_aprendizaje.Pregunta_20, estilo_aprendizaje.Pregunta_21, estilo_aprendizaje.Pregunta_22, estilo_aprendizaje.Pregunta_23, estilo_aprendizaje.Pregunta_24, estilo_aprendizaje.Pregunta_25, estilo_aprendizaje.Pregunta_26, estilo_aprendizaje.Pregunta_27, estilo_aprendizaje.Pregunta_28, estilo_aprendizaje.Pregunta_29, estilo_aprendizaje.Pregunta_30, estilo_aprendizaje.Pregunta_31, estilo_aprendizaje.Pregunta_32, estilo_aprendizaje.Pregunta_33, estilo_aprendizaje.Pregunta_34, estilo_aprendizaje.Pregunta_35, estilo_aprendizaje.Pregunta_36, estilo_aprendizaje.Pregunta_37, estilo_aprendizaje.Pregunta_38, estilo_aprendizaje.Pregunta_39, estilo_aprendizaje.Pregunta_40, estilo_aprendizaje.Pregunta_41, estilo_aprendizaje.Pregunta_42, estilo_aprendizaje.Pregunta_43`, estilo_aprendizaje.Pregunta_44, estilo_aprendizaje.Activo, estilo_aprendizaje.Reflexivo, estilo_aprendizaje.Teorico, estilo_aprendizaje.Pragmatico, estilo_aprendizaje.Porcentaje_activo, estilo_aprendizaje.Porcentaje_reflex, estilo_aprendizaje.Porcentaje_teo, estilo_aprendizaje.Porcentaje_prag, estilo_aprendizaje.Fecha, estilo_aprendizaje.Nombre) VALUES(NULL,$id,$p1,$p2,$p3,$p4,$p5,$p6,$p7,$p8,$p9,
+                                        $p10,$p11,$p12,$p13,$p14,$p15,$p16,$p17,
+                                        $p18,$p19,$p20,$p21,$p22,$p23,$p24,$p25,
+                                        $p26,$p27,$p28,$p29,$p30,$p31,$p32,$p33,$p34,$p35,$p36,$p37,$p38,
+                                        $p39,$p40,$p41,
+                                        $p42,$p43,$p44,$activo,$reflexivo,$teorico,
+                                        $pragmatico,$porcentaje_activo,$porcentaje_reflexisivo,
+                                        $porcentaje_teorico,$porcentaje_pragmatico,
+                                        '$date','Hola')");
 
 $update = $mysqli->query("UPDATE usuarios SET Cuestionario_4 = 1 WHERE Id_usuario = '$id'");
 
