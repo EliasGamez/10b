@@ -68,7 +68,7 @@ $insertar =$mysqli->query("INSERT INTO usuarios (usuarios.Id_usuario, usuarios.N
                                         '$sexo','$apaterno','$amaterno','$desc_carrera','$desc_grupo',
                                         '$desc_nivel','Alumno',0,0,0,0,0,0,0,0,0,0)");                             
 
-                if($insertar) {
+                if($insertar==false) {
                   $queryusuario = mysqli_query($mysqli,"SELECT * FROM usuarios WHERE Matricula ='$correo'");
                   $nr = mysqli_fetch_array($queryusuario); 
                   $_SESSION['Cuestionario1'] = $nr['Cuestionario_1'];
