@@ -4,7 +4,7 @@
   require_once('./lib/nusoap.php');
 
   $correo=$_POST['matricula'];
-  $contraseña=$_POST['contraseña'];
+  $password=$_POST['contraseña'];
   $tipo_usuario=$_POST['rol'];
 
   if ($tipo_usuario =='Alumno') {
@@ -14,7 +14,7 @@
     if ($err) {
       echo '<h2>Constructor error</h2><pre>' . $err . '</pre>';
     }
-    $params = array('lsMatricula' => $correo,'lsPassword'  => $contraseña);
+    $params = array('lsMatricula' => $correo,'lsPassword'  => $password);
     $result = $client->call('Login', $params);
    
     if ($result) {
@@ -101,7 +101,7 @@
   } else if($tipo_usuario=='Docente') {
     $consultar=$mysqli->query("SELECT * FROM usuarios WHERE Matricula = '$correo'");
     if($dato=$consultar->fetch_array()) {
-      if ($contraseña == $dato['Contrasena']) {
+      if ($password == $dato['Contrasena']) {
 
         $queryusuario = mysqli_query($mysqli,"SELECT * FROM usuarios WHERE Matricula ='$correo'");
         $nr = mysqli_fetch_array($queryusuario); 
