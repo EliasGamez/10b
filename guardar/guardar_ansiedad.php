@@ -120,24 +120,27 @@ $rasgo = $aabb;
 //                                                         '$aabb','$estado','$rasgo','','$date')")
 
 
-$insertar = $mysqli->query("INSERT INTO `ansiedad` A (`A.Id_ansiedad`, `A.Id_usuario`, `A.Pregunta_1`, `A.Pregunta_2`, 
-                                        `A.Pregunta_3`, `A.Pregunta_4`, `A.Pregunta_5`, `A.Pregunta_6`, `A.Pregunta_7`, 
-                                        `A.Pregunta_8`, `A.Pregunta_9`, `A.Pregunta_10`, `A.Pregunta_11`, `A.Pregunta_12`, 
-                                        `A.Pregunta_13`, `A.Pregunta_14`, `A.Pregunta_15`, `A.Pregunta_16`, 
-                                        `A.Pregunta_17`, `A.Pregunta_18`, `A.Pregunta_19`, `A.Pregunta_20`, 
-                                        `A.Pregunta_21`, `A.Pregunta_22`, `A.Pregunta_23`, `A.Pregunta_24`, 
-                                        `A.Pregunta_25`, `A.Pregunta_26`, `A.Pregunta_27`, `A.Pregunta_28`, 
-                                        `A.Pregunta_29`, `A.Pregunta_30`, `A.Pregunta_31`, `A.Pregunta_32`, 
-                                        `A.Pregunta_33`, `A.Pregunta_34`, `A.Pregunta_35`, `A.Pregunta_36`, 
-                                        `A.Pregunta_37`, `A.Pregunta_38`, `A.Pregunta_39`, `A.Pregunta_40`, 
-                                        `A.Escala_estado`, `A.Escala_rasgo`, `A.Estado`, `A.Rasgo`, `A.Nombre`, 
-                                        `A.Fecha`) 
-                                        VALUES('','$id','$p1','$p2','$p3','$p4','$p5','$p6','$p7','$p8','$p9',
-                                                        '$p10','$p11','$p12','$p13','$p14','$p15','$p16','$p17',
-                                                        '$p18','$p19','$p20','$p21','$p22','$p23','$p24','$p25',
-                                                        '$p26','$p27','$p28','$p29','$p30','$p31','$p32','$p33',
-                                                        '$p34','$p35','$p36','$p37','$p38','$p39','$p40','$ab',
-                                                        '$aabb','$estado','$rasgo','','$date')");
+$insertar = $mysqli->query("INSERT INTO ansiedad (ansiedad.Id_ansiedad, ansiedad.Id_usuario, 
+                                        ansiedad.Pregunta_1, ansiedad.Pregunta_2, ansiedad.Pregunta_3, 
+                                        ansiedad.Pregunta_4, ansiedad.Pregunta_5, ansiedad.Pregunta_6, 
+                                        ansiedad.Pregunta_7,ansiedad.Pregunta_8, ansiedad.Pregunta_9, 
+                                        ansiedad.Pregunta_10, ansiedad.Pregunta_11, ansiedad.Pregunta_12,
+                                        ansiedad.Pregunta_13, ansiedad.Pregunta_14, ansiedad.Pregunta_15, 
+                                        ansiedad.Pregunta_16,ansiedad.Pregunta_17, ansiedad.Pregunta_18, 
+                                        ansiedad.Pregunta_19, ansiedad.Pregunta_20, ansiedad.Pregunta_21, 
+                                        ansiedad.Pregunta_22, ansiedad.Pregunta_23, ansiedad.Pregunta_24,
+                                        ansiedad.Pregunta_25, ansiedad.Pregunta_26, ansiedad.Pregunta_27, 
+                                        ansiedad.Pregunta_28,ansiedad.Pregunta_29, ansiedad.Pregunta_30, 
+                                        ansiedad.Pregunta_31, ansiedad.Pregunta_32,ansiedad.Pregunta_33, 
+                                        ansiedad.Pregunta_34, ansiedad.Pregunta_35, ansiedad.Pregunta_36,
+                                        ansiedad.Pregunta_37, ansiedad.Pregunta_38, ansiedad.Pregunta_39, 
+                                        ansiedad.Pregunta_40,ansiedad.Escala_estado, ansiedad.Escala_rasgo, 
+                                        ansiedad.Estado, ansiedad.Rasgo, ansiedad.Nombre,ansiedad.Fecha) 
+                                        VALUES(NULL,'$id','$p1','$p2','$p3','$p4','$p5','$p6','$p7','$p8',
+                                        '$p9','$p10','$p11','$p12','$p13','$p14','$p15','$p16','$p17','$p18',
+                                        '$p19','$p20','$p21','$p22','$p23','$p24','$p25','$p26','$p27','$p28',
+                                        '$p29','$p30','$p31','$p32','$p33','$p34','$p35','$p36','$p37','$p38',
+                                        '$p39','$p40','$ab','$aabb','$estado','$rasgo','','$date')");
 
 $update = $mysqli->query("UPDATE usuarios SET Cuestionario_1 = 1 WHERE Id_usuario = '$id'");
 
