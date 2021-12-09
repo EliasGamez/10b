@@ -57,16 +57,16 @@
                 //                                          '$mail','$sexo','$apaterno','$amaterno','$desc_carrera',
                 //                                          '$desc_grupo','$desc_nivel','Alumno')");
 
-$insertar =$mysqli->query("INSERT INTO usuarios (usuarios.Id_usuario, usuarios.Nombre,usuarios.Telefono,
-                                        usuarios.Matricula,usuarios.Contrasena,usuarios.Correo, usuarios.Sexo, 
-                                        usuarios.Apellido_paterno, usuarios.Apellido_materno, usuarios.Carreras, 
-                                        usuarios.Grado,usuarios.Nivel, usuarios.Rol, usuarios.Estatus_alumno, 
-                                        usuarios.Crear, usuarios.Visualizar,usuarios.Cuestionario,
-                                        usuarios.Activar, usuarios.Cuestionario_1, usuarios.Cuestionario_2, 
-                                        usuarios.Cuestionario_3,usuarios.Cuestionario_4, usuarios.Cuestionario_5) 
-                                        VALUES (NULL,'$nombre','$telefono','$matricula','$contrasena','$mail',
-                                        '$sexo','$apaterno','$amaterno','$desc_carrera','$desc_grupo',
-                                        '$desc_nivel','Alumno',0,0,0,0,0,0,0,0,0,0)");                             
+                $insertar =$mysqli->query("INSERT INTO usuarios (usuarios.Id_usuario, usuarios.Nombre,usuarios.Telefono,usuarios.Matricula,
+                                                                usuarios.Contrasena,usuarios.Correo, usuarios.Sexo,usuarios.Apellido_paterno, 
+                                                                usuarios.Apellido_materno, usuarios.Carreras,usuarios.Grado,usuarios.Nivel, 
+                                                                usuarios.Rol, usuarios.Estatus_alumno,usuarios.Crear, usuarios.Visualizar,
+                                                                usuarios.Cuestionario,usuarios.Activar, usuarios.Cuestionario_1, 
+                                                                usuarios.Cuestionario_2,usuarios.Cuestionario_3,usuarios.Cuestionario_4, 
+                                                                usuarios.Cuestionario_5) 
+                                                                VALUES (NULL,'$nombre','$telefono','$matricula','$contrasena','$mail','$sexo',
+                                                                '$apaterno','$amaterno','$desc_carrera','$desc_grupo','$desc_nivel',
+                                                                'Alumno',0,0,0,0,0,0,0,0,0,0)");                             
 
                 if($insertar) {
                   $queryusuario = mysqli_query($mysqli,"SELECT * FROM usuarios WHERE Matricula ='$correo'");
