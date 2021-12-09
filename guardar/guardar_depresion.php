@@ -71,9 +71,19 @@ if($total2 > 13){
     $total2;
 }
 
-$insertar = $mysqli->query("INSERT INTO depresion VALUES('','$id','$p1','$p2','$p3','$p4','$p5','$p6','$p7','$p8','$p9',
-                                                        '$p10','$p11','$p12','$p13','$p14','$p15','$p16','$p17',
-                                                        '$p18','$p19','$p20','$p21','$total','$total2','$date','')");
+$insertar = $mysqli->query("INSERT INTO depresion (depresion.Id_depresion, depresion.Id_usuario, 
+                                        depresion.Pregunta_1, depresion.Pregunta_2, depresion.Pregunta_3, 
+                                        depresion.Pregunta_4, depresion.Pregunta_5, depresion.Pregunta_6, 
+                                        depresion.Pregunta_7, depresion.Pregunta_8, depresion.Pregunta_9, 
+                                        depresion.Pregunta_10, depresion.Pregunta_11, depresion.Pregunta_12, 
+                                        depresion.Pregunta_13, depresion.Pregunta_14, depresion.Pregunta_15, 
+                                        depresion.Pregunta_16, depresion.Pregunta_17, depresion.Pregunta_18, 
+                                        depresion.Pregunta_19, depresion.Pregunta_20, depresion.Pregunta_21, 
+                                        depresion.Rango, depresion.Rango_numerico, depresion.Fecha, 
+                                        depresion.Nombre) 
+                                        VALUES(NULL,$id,$p1,$p2,$p3,$p4,$p5,$p6,$p7,$p8,$p9,$p10,$p11,$p12,
+                                        $p13,$p14,$p15,$p16,$p17,$p18,$p19,$p20,$p21,'$total',$total2,'$date',
+                                        'Hola')");
 
 $update = $mysqli->query("UPDATE usuarios SET Cuestionario_2 = 1 WHERE Id_usuario = '$id'");
 
