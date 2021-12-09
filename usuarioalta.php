@@ -64,7 +64,7 @@ $insertar =$mysqli->query("INSERT INTO usuarios (usuarios.Id_usuario, usuarios.N
                                         usuarios.Crear, usuarios.Visualizar,usuarios.Cuestionario,
                                         usuarios.Activar, usuarios.Cuestionario_1, usuarios.Cuestionario_2, 
                                         usuarios.Cuestionario_3,usuarios.Cuestionario_4, usuarios.Cuestionario_5) 
-                                        VALUES ('','$nombre','$telefono','$matricula','$contrasena','$mail',
+                                        VALUES (NULL,'$nombre','$telefono','$matricula','$contrasena','$mail',
                                         '$sexo','$apaterno','$amaterno','$desc_carrera','$desc_grupo',
                                         '$desc_nivel','Alumno',0,0,0,0,0,0,0,0,0,0)");                             
 
