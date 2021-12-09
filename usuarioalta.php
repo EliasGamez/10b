@@ -57,7 +57,7 @@
                 //                                          '$mail','$sexo','$apaterno','$amaterno','$desc_carrera',
                 //                                          '$desc_grupo','$desc_nivel','Alumno')");
 
-                $insertar =$mysqli->query("INSERT INTO usuarios (usuarios.Id_usuario, usuarios.Nombre,usuarios.Telefono,usuarios.Matricula,
+                $insertar=$mysqli->query("INSERT INTO usuarios (usuarios.Id_usuario, usuarios.Nombre,usuarios.Telefono,usuarios.Matricula,
                                                                 usuarios.Contrasena,usuarios.Correo, usuarios.Sexo,usuarios.Apellido_paterno, 
                                                                 usuarios.Apellido_materno, usuarios.Carreras,usuarios.Grado,usuarios.Nivel, 
                                                                 usuarios.Rol, usuarios.Estatus_alumno,usuarios.Crear, usuarios.Visualizar,
