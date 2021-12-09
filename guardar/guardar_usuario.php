@@ -46,12 +46,16 @@ if(isset($_POST['p4'])) {
     $p4 = 0;
 }
 
-$insertar = $mysqli->query("INSERT INTO usuarios (Id_usuario, Nombre, Telefono, Matricula,Correo, Contrasena, 
-                                                    Sexo, Apellido_paterno, Apellido_materno, Rol, Crear,
-                                                    Visualizar, Cuestionario, Activar) 
-                                                    VALUES('','$nombre','$telefono','$correo','$correo',
-                                                    '$password','$sexo','$apellidop','$apellidom','Docente',
-                                                    '$p1','$p2','$p3','$p4')");
+$insertar = $mysqli->query("INSERT INTO usuarios (usuarios.Id_usuario, usuarios.Nombre,usuarios.Telefono,
+                                        usuarios.Matricula,usuarios.Contrasena,usuarios.Correo, usuarios.Sexo, 
+                                        usuarios.Apellido_paterno, usuarios.Apellido_materno, usuarios.Carreras, 
+                                        usuarios.Grado,usuarios.Nivel, usuarios.Rol, usuarios.Estatus_alumno, 
+                                        usuarios.Crear, usuarios.Visualizar,usuarios.Cuestionario,
+                                        usuarios.Activar, usuarios.Cuestionario_1, usuarios.Cuestionario_2, 
+                                        usuarios.Cuestionario_3,usuarios.Cuestionario_4, usuarios.Cuestionario_5) 
+                                        VALUES (NULL,'$nombre','$telefono','$correo','$password','$correo',
+                                        '$sexo','$apaterno','$amaterno',0,0,
+                                        0,'Docente',0,'$p1','$p2','$p3','$p4',0,0,0,0,0)");
 
 if($insertar){
         echo "<script> alert('Usuario resgistrado');window.location= '../admin/usuario.php' </script>";
