@@ -48,7 +48,7 @@
               // $_SESSION['Cuestionario5'] = $nr['Cuestionario_5'];
               // $_SESSION['Id'] = $nr['Id_usuario'];
               
-              if(mysqli_num_rows($sql) == 1){
+              if(mysqli_num_rows($sql) == 0){
                 // $insertar =$mysqli->query("INSERT INTO usuarios (Id_usuario, Nombre, Telefono, Matricula, 
                 //                                                 Contrasena, Correo, Sexo, Apellido_paterno, 
                 //                                                 Apellido_materno, Carreras, Grado, Nivel,
